@@ -4,13 +4,13 @@ title : index
 <!DOCTYPE html>
 <html>
   <head>
-    <title>blog article list : nigayo</title>
+    <title>blog article list : semins</title>
     <meta charset=utf-8>
     <meta name="viewport" content="width=device-width" initial-scale=1>
 
-    <meta property="og:site_name" content="nigayo blog list">
+    <meta property="og:site_name" content="semins blog list">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Blog article list : nigayo">
+    <meta property="og:title" content="Blog article list : semins">
     <meta property="og:description" content="작성된 blog article list입니다">
 
     <link href="/dest/css/0.0.1/listPage.css" rel="stylesheet" media="screen">
@@ -21,13 +21,15 @@ title : index
 
     <script>
       if((/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
-        document.location = "list_m.html";
+        document.location = "tech_m.html";
       } 
 /*
     if (screen.width <=699) {
-      document.location = "list_m.html";
+      document.location = "tech_m.html";
     }
     */
+
+
     </script>
   </head>
   <body>
@@ -37,9 +39,9 @@ title : index
     		<nav id="top">
           <ul class="marginLeft">
             <li><a href="/">home</a></li>
-            <li><a href="list.html">posts</a></li>
-             <li><a href="/page/lecture.html">lecture</a></li>
-            <li><a href="http://github.com/nigayo">github</a></li>
+            <li><a href="list.html">technical reports</a></li>
+             <li><a href="/page/lecture.html">shit</a></li>
+            <li><a href="http://github.com/semins79">github</a></li>
           </ul>
     		</nav>
   		</header>
@@ -84,20 +86,18 @@ title : index
               {% endif %} 
                  </li>
               {% endfor %} 
+
             </ul>
         </div -->
  			</section>
 
-      <!-- section>
-      <a href="http://localhost:4000/next/2014/01/24/newEdu.html#disqus_thread"> comment link test</a>
-      </section -->
+
 
   		 <footer>
             <section>
               <img src="/images/crong.jpg">
               <ul>
-                <li>Younjisu , NEXT</li>
-                <li>aniga75@gmail.com</li>
+                <li>semins@tu.ac.kr</li>
               </ul>
           </section>
         </footer>
@@ -106,11 +106,15 @@ title : index
     <script src="/dest/js/0.0.1/listPage_min_0.0.1.js"></script>
     <script>
         $Element(document).attach('domready', function() {
+
           //set verticle center
           //utils.setLayout();
+
           var o = Nigayo.List();
+
           //내부 함수에서 Closure scope를 가지고 있음. 
           o.attachEvents();
+
           //본문 영역을 첫번째 선택한 것으로 fire!!
           o.fireLayer(); 
         });
@@ -126,4 +130,3 @@ title : index
     </script>
   </body>
 </html>
-
